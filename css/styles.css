@@ -1,0 +1,252 @@
+/* For testing only */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  /*border:1px dashed #000;*/
+}
+
+.columns {
+  min-height: 100px !important;
+}
+
+/* End for testing */
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/Raleway-Regular.ttf");
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+p, h3, h2, span {
+  font-family: 'raleway';
+}
+
+.description h2 {
+  font-size: 2.5em;
+}
+
+
+
+/* Nav styles ---------------- */
+
+.nav img {
+  float: left;
+  margin-top: 10px;
+  width: 150px;
+  margin-left: 5%;
+}
+
+
+.nav {
+  overflow: auto;
+  background-image: url("../img/headerImage.jpg");
+  background-size: cover;
+  height: 40vh;
+}
+.nav h2 {
+  float: left;
+  padding: 2% 2% 2% 2%;
+}
+
+.navLinks {
+  float: right;
+  padding-top: 4%;
+  width: 40%;
+}
+
+.navLinks span {
+  margin-left: 15px;
+  padding: 2% 2% 2% 2%;
+  /*border: 1px solid yellow;*/
+
+}
+
+/* Header  styles ---------------- */
+.header {
+  clear: both;
+  overflow: auto;
+}
+
+.header p {
+  font-size: 1.2em;
+}
+
+.header h2 {
+  line-height: .8em;
+}
+
+.header .description {
+  color: gray;
+  margin-top: 10%;
+  line-height: 20px;
+  width: 49%;
+  float: left;
+}
+
+.header img {
+  float: right;
+  width: 35%;
+  border-radius: 50%;
+  margin: 2%;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* Content styles ---------------- */
+
+.columns {
+  float: left;
+  width: 32%;
+  /*border: 1px solid red;*/
+  margin: 1% 1% 1% 0;
+  padding: 1%;
+}
+
+.content {
+  overflow: auto;
+}
+
+.image {
+  width: 95%;
+  height: 170px;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 5%;
+}
+
+#col3 img {
+  height: 50px;
+  float: left;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 5px;
+}
+
+.col3example {
+  overflow: auto;
+  margin-bottom: 7%;
+}
+
+#col3 .exampleText {
+  float: left;
+  width: 85%;
+  padding-left: 10px;
+}
+
+/* MEDIA QUERIES---------------- */
+
+@media screen and (max-width: 1400px) {
+  #col1 {
+    overflow: auto;
+    float: none;
+    width: 100%;
+  }
+  #col1 .image {
+    float: left;
+    width: 31%;
+    margin: 1%;
+  }
+  #col2, #col3 {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .header .description {
+    margin-top: 5%;
+    font-size: .8em;
+    width: 51%;
+  }
+  .header img {
+    margin-top: 5%;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .navLinks {
+    clear: both;
+    float: none;
+    width: 90%;
+    margin-top: 30vh;
+    text-align: center;
+  }
+  .navLinks span {
+    margin: 0 auto;
+    color: white;
+    width: 20%;
+    font-weight: bolder;
+  }
+
+  .nav {
+    overflow: auto;
+  }
+  #logoImage{
+    margin-left: 35%;
+    margin-top: 10vh;
+    width: 30%;
+  }
+  .header {
+    padding-top: 3%;
+  }
+  .header .description {
+    float: none;
+    margin: 0 auto;
+    width: 95%;
+  }
+  .header img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+  }
+  #col1 .image{
+    display: block;
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+    padding: 4%;
+  }
+  .columns {
+    float: none;
+    margin: 0 auto;
+  }
+
+  #col2, #col3 {
+    width: 95%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+  }
+  #col3 img{
+    width: 24%;
+    height: auto;
+  }
+  #col3 .exampleText {
+    width: 75%;
+  }
+  #midExample .exampleText {
+    float: none;
+  }
+  #col3 #midExample img {
+    float: right;
+    width: 24%;
+    height: auto;
+  }
+}
